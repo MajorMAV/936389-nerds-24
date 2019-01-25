@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="logo" href="index.html">
+          <img src="img/logo-small.png" width="50" height="50" alt="Логотип студии NERD`S">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="basket">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">.
+      <h1>Магазин готовых шаблонов</h1>
+      <section class="sorting">
+        <h2>Сортировать:</h2>
+      </section>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
+        <div class="filter-price">
+          <h3>Стоимость:</h3>
+          <label>
+            <input class="filter-minpraice" type="number" >ОТ
+          </label>
+          <label>
+            <input class="filter-maxpraice" type="number" >ДО
+          </label>
+        </div>
+        <div class="filter-grid">
+          <h3>Сетка:</h3>
+          <ul class="filter-grid-list">
+            <li class="filter-grid-item">
+              <label>
+                <input type="radio">Адаптивна
+              </label>
+            </li>
+            <li class="filter-grid-item">
+              <label>
+                <input type="radio">Фиксированная
+              </label>
+            </li>
+            <li class="filter-grid-item">
+              <label>
+                <input type="radio">Рехиновая
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-feature">
+          <h3>Особенности:</h3>
+          <ul class="filter-feature-list">
+            <li class="filter-feature-item">
+              <label>
+                <input type="checkbox">Слайдер
+              </label>
+            </li>
+            <li class="filter-feature-item">
+                <label>
+                  <input type="checkbox">Длок преимуществ
+                </label>
+            </li>
+            <li class="filter-feature-item">
+                <label>
+                  <input type="checkbox">Новости
+                </label>
+            </li>
+            <li class="filter-feature-item">
+                <label>
+                  <input type="checkbox">Галерея
+                </label>
+            </li>
+            <li class="filter-feature-item">
+                <label>
+                  <input type="checkbox">Корзина
+                </label>
+            </li>
+          </ul>
+        </div>
+        <span class="filtrate"></span>
+      </section>
+      <section class="templates">
+        <h2 class="visually-hidden">Готовые шаблоны</h2>
+        <ul class="templates-list">
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/sedona.png" width="150" height="150" alt="Главная страница сайта SEDONA">
+            <div class="templates-item-hover">
+              <b>SEDONA</b>
+              <span>Иформационный сайт для туристов</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/pink.png" width="150" height="150" alt="Главная страница сайта PINK">
+            <div class="templates-item-hover">
+              <b>PINK</b>
+              <span>Продуктовый лендинг приложения для iOS и Android</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/sedona.png" width="150" height="150" alt="Главная страница сайта BORODINSKI">
+            <div class="templates-item-hover">
+              <b>BARBERSHOP</b>
+              <span>Сайт салона красоты. Для музчин, да.</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/sedona.png" width="150" height="150" alt="Главная страница сайта MISHKA">
+            <div class="templates-item-hover">
+              <b>MISHKA</b>
+              <span>Интернет магазин вязаных игрушек</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/sedona.png" width="150" height="150" alt="Главная страница сайта A PLUS">
+            <div class="templates-item-hover">
+              <b>A PLUS</b>
+              <span>Лендинг курсов повышения квалификации</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+          <li class="templates-item">
+            <span class="templates-item-header"></span>
+            <img src="img/sedona.png" width="150" height="150" alt="Главная страница сайта КВАСТ">
+            <div class="templates-item-hover">
+              <b>КВАСТ</b>
+              <span>Промо-сайт производителя крафтового кваса</span>
+              <span class="templates-item-select">9900 руб.</span>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item">1</li>
+            <li class="pagination-item">2</li>
+            <li class="pagination-item pagination-current">3</li>
+            <li class="pagination-item">4</li>
+          </ul>
+          <span class="pagination-button-next">Следующая</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <img src="img/map.png" width="150" height="150" alt="Изображение карты">
+      <setion class="footer-contacts">
+        <b class="footer-studio-name">NERDS DESING STUDIO</b>
+        <p class="footer-studio-address">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+        <p class="footer-studio-phone">
+          тел. +7(812)275-75-75
+        </p>
+        <span><a href="mail.html">Напишите нам</a></span>
+      </setion>
+      <div class="social">
+      <ul class="social-buttons">
+        <li>Вконтакте</li>
+        <li>Фейсбук</li>
+        <li>Инстаграм</li>
+      </ul>
+      <p class="social-invitation">
+        <b class="social-invitation-text">Давай дружить, это выгодно!</b>
+        <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
+      </p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
