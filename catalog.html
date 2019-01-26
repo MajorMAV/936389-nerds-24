@@ -29,21 +29,12 @@
       <h1>Магазин готовых шаблонов</h1>
       <section class="sorting">
         <h2>Сортировать:</h2>
+        <!--Здесь будет элемнты сортировки-->
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
-        <!--Здесь будет форма фильтра-->
-        <!--
-        <div class="filter-price">
-          <h3>Стоимость:</h3>
-          <label>
-            <input class="filter-minpraice" type="number" >ОТ
-          </label>
-          <label>
-            <input class="filter-maxpraice" type="number" >ДО
-          </label>
-        </div>
-        <div class="filter-grid">
+        <form>
+          <div class="filter-grid">
           <h3>Сетка:</h3>
           <ul class="filter-grid-list">
             <li class="filter-grid-item">
@@ -62,8 +53,8 @@
               </label>
             </li>
           </ul>
-        </div>
-        <div class="filter-feature">
+          </div>
+          <div class="filter-feature">
           <h3>Особенности:</h3>
           <ul class="filter-feature-list">
             <li class="filter-feature-item">
@@ -92,9 +83,9 @@
                 </label>
             </li>
           </ul>
-        </div>
-        <span class="filtrate"></span>
-        -->
+          </div>
+          <span class="filtrate"><a href="#">Показать</a></span>
+        </form>
       </section>
       <section class="templates">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
@@ -172,15 +163,15 @@
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item pagination-current">3</li>
             <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
           </ul>
-          <span class="pagination-button-next">Следующая</span>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <img src="img/map.png" width="150" height="150" alt="Изображение карты">
-      <setion class="footer-contacts">
+      <div class="footer-contacts">
+        <img src="img/map.png" width="150" height="150" alt="Изображение карты">
         <b class="footer-studio-name">NERDS DESING STUDIO</b>
         <p class="footer-studio-address">
           191186, Санкт-Петербург,<br>
@@ -190,17 +181,17 @@
           тел. +7(812)275-75-75
         </p>
         <span><a href="#">Напишите нам</a></span>
-      </setion>
+      </div>
       <div class="social">
-      <ul class="social-buttons">
-        <li class="social-buttons-item">Вконтакте</li>
-        <li class="social-buttons-item">Фейсбук</li>
-        <li class="social-buttons-item">Инстаграм</li>
-      </ul>
-      <p class="social-invitation">
-        <b class="social-invitation-text">Давай дружить, это выгодно!</b>
-        <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
-      </p>
+        <ul class="social-buttons">
+          <li class="social-buttons-item"><a href="#">Вконтакте</a></li>
+          <li class="social-buttons-item"><a href="#">Фейсбук</a></li>
+          <li class="social-buttons-item"><a href="#">Инстаграм</a></li>
+        </ul>
+        <p class="social-invitation">
+          <b class="social-invitation-text">Давай дружить, это выгодно!</b>
+          <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
+        </p>
       </div>
     </footer>
 
