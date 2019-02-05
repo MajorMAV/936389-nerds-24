@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -166,7 +169,7 @@
         <img src="img/map.jpg"
             alt="Изображение карты. Адрес: 191186, Санкт-Петербург,
                 ул. Б. Конюшенная, д. 19/8 тел. +7(812)275-75-75">
-        <b class="footer-studio-name">NERDS DESING STUDIO</b>
+        <b class="footer-studio-name">NЁRDS DESING STUDIO</b>
         <p class="footer-studio-address">
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
@@ -174,7 +177,7 @@
         <p class="footer-studio-phone">
           тел. +7(812)275-75-75
         </p>
-        <a href="#">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </div>
       <div class="social">
         <ul class="social-buttons">
@@ -188,8 +191,8 @@
         </p>
       </div>
       <section>
-          <h2 class="visually-hidden">Форма "Напишите нам"</h2>
-          <form class="form-write-to-us" method="POST" action="https://echo.htmlacademy.ru">
+          <h2>Напишите нам</h2>
+          <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
             <p>
               <label for="field-name">Ваше имя:</label>
               <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
@@ -200,9 +203,9 @@
             </p>
             <p>
               <label for="field-message">Текст письма:</label>
-              <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
+              <input type="text" id="field-message" name="message" placeholder="В свободной форме"></input>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
           </form>
         </section>
     </footer>
