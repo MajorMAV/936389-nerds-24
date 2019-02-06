@@ -23,8 +23,7 @@ a {
   text-transform: uppercase;
 
   background-color: #eeeeee;
-  background-image: url("../img/pattern-white.jpg");
-  background-repeat: space;
+
 }
 
 .site-navigation,
@@ -111,13 +110,10 @@ a {
   color: #000000;
 
   background-color: #eeeeee;
-  background-image: url("../img/pattern-white.jpg");
-  background-repeat: space;
+
 }
 .slides {
   background-color: #eeeeee;
-  background-image: url("../img/pattern-white.jpg");
-  background-repeat: space;
 }
 .slides-list {
   list-style: none;
@@ -173,14 +169,14 @@ a {
   list-style: none;
 }
 
-.motto-item span:first-child {
+.motto-item b {
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
   color: #000000;
 }
 
-.motto-item span:last-child {
+.motto-item span {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -361,21 +357,21 @@ a {
   list-style: none;
 }
 
-.templates-item-header {
+.templates-item::before {
+  display: block;
+  content: "";
   width: 360px;
   height: 40px;
   opacity: 0.12;
   background-image: url("../img/browser.svg");
-
 }
-.templates-item-header:hover {
+
+.templates-item:hover::before {
   opacity: 1;
 }
 
 .templates-item-hover{
   background-color: #eeeeee;
-  background-image: url("../img/pattern-white.jpg");
-  background-repeat: space;
 }
 
 .templates-item-hover h3 {
@@ -427,3 +423,5 @@ a {
   background-color: transparent;
   border: 3px solid #dbdbdb;
 }
+
+
