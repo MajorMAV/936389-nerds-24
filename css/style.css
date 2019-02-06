@@ -281,6 +281,11 @@ a {
   border-color: #000000
 }
 
+.write-to-us-form input:-webkit-autofill:invalid {
+  -webkit-text-fill-color: #e74246;
+  border-color: #e74246
+}
+
 .sorting h2 {
   font-size: 18px;
   line-height: 18px;
