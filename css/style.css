@@ -159,6 +159,11 @@ a {
   list-style: none;
 }
 
+.about-products-item::before{
+  content: "-";
+  color: #e74246;
+}
+
 .about-motto b {
   font-size: 16px;
   line-height: 24px;
@@ -181,6 +186,22 @@ a {
   line-height: 18px;
   font-weight: 500;
   color: #283136;
+}
+.partners-list {
+  list-style: none;
+}
+
+.partners-item a {
+  opacity: 0.2;
+}
+
+.partners-item a:hover,
+.partners-item a:focus {
+  opacity: 1;
+}
+
+.partners-item a:active {
+  opacity: 0.1;
 }
 
 .footer-studio-name {
