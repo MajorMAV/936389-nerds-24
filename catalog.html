@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
       <nav class="main-navigation">
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <main class="container">.
+    <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <section class="sorting">
         <h2>Сортировать:</h2>
@@ -37,6 +37,17 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
         <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-price">
+            <legend>Стоимоть:</legend>
+            <div>
+              <label for="filter-min-price">От</label>
+              <input type="number" id="filter-min-price" name="min-price" value="0">
+            </div>
+            <div>
+              <label for="filter-max-price">До</label>
+              <input type="number" id="filter-max-price" name="max-price" value="1500">
+            </div>
+          </fieldset>
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul class="filter-grid-list">
@@ -79,14 +90,14 @@
             </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="templates">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
         <ul class="templates-list">
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Изображение главной страницы сайта SEDONA">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -97,7 +108,7 @@
             </div>
           </li>
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Изображение главной страницы сайта PINK">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -108,7 +119,7 @@
             </div>
           </li>
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Изображение главной страницы сайта BORODINSKI">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -119,7 +130,7 @@
             </div>
           </li>
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Изображение главной страницы сайта MISHKA">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -130,7 +141,7 @@
             </div>
           </li>
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Изображение главной страницы сайта A PLUS">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -141,7 +152,7 @@
             </div>
           </li>
           <li class="templates-item">
-            <span class="templates-item-header"></span>
+            <div class="templates-item-header"></div>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Изображение главной страницы сайта КВАСТ">
             <div class="templates-item-hover">
               <div class="templates-item-info">
@@ -156,7 +167,7 @@
           <ul class="pagination-list">
             <li class="pagination-item"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item pagination-current">3</li>
+            <li class="pagination-item pagination-current"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">4</a></li>
             <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
           </ul>
@@ -203,7 +214,7 @@
             </p>
             <p>
               <label for="field-message">Текст письма:</label>
-              <input type="text" id="field-message" name="message" placeholder="В свободной форме"></input>
+              <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
