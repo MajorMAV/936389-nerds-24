@@ -453,6 +453,8 @@ a {
 }
 
 .social-buttons-item {
+  position: relative;
+  display: block;
   width: 78px;
   height: 78px;
 
@@ -462,20 +464,46 @@ a {
   background-color: #e1e1e1;
   border-radius: 50%;
 }
+.social-buttons-item:hover,
+.social-buttons-item:focus {
+  background-color: #e74246;
+}
+.social-buttons-item:active {
+  background-color: #d7373b;
+}
 
-.social-vk {
+.social-buttons-item:active::after {
+  opacity: 0.3;
+}
+
+.social-vk::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 78px;
+
   background-image: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.social-fb {
+.social-fb::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 78px;
+
   background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.social-insta {
+.social-insta::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 78px;
+
   background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -489,7 +517,6 @@ a {
   width: 960px;
   height: 590px;
 
-  /* background-color: green; */
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
 }
 .write-to-us h2 {
