@@ -376,6 +376,7 @@ a {
 .footer-contacts {
   position: relative;
   height: 416px;
+  margin-bottom: 69px;
 }
 
 .footer-contacts img {
@@ -419,7 +420,12 @@ a {
 }
 
 .social {
-  list-style: none;
+  display: flex;
+}
+
+.social-invitation{
+  width:560px;
+  margin-left: 140px;
 }
 
 .social-invitation-text {
@@ -437,9 +443,55 @@ a {
 }
 
 .social-buttons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  justify-content: space-between;
+
   list-style: none;
 }
 
+.social-buttons-item {
+  width: 78px;
+  height: 78px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-insta {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.write-to-us {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 960px;
+  height: 590px;
+
+  /* background-color: green; */
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+}
 .write-to-us h2 {
   font-size: 45px;
   line-height: 45px;
