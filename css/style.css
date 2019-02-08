@@ -14,8 +14,21 @@ body {
 a {
   text-decoration: none;
 }
-
+.main-header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .main-navigation {
+  display: flex;
+  width: 1160px;
+  padding-top: 49px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -30,6 +43,20 @@ a {
 .site-navigation,
 .user-navigation {
   list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.user-navigation {
+  display: flex;
+  width: 160px;
+  padding: 0;
+  justify-content: flex-end;
 }
 
 .site-navigation a,
@@ -47,6 +74,10 @@ a {
 .site-navigation a:active,
 .user-navigation a:active {
   color: rgba(0,0,0,0.3);
+}
+
+.logo {
+  line-height: 0;
 }
 
 .button {
@@ -427,3 +458,6 @@ a {
   background-color: transparent;
   border: 3px solid #dbdbdb;
 }
+
+/* Сетка*/
+
