@@ -398,7 +398,7 @@ a {
 }
 
 .footer-contacts::after {
-  content: "";
+  content: url("../img/map-marker.png");
   display: block;
   position: absolute;
   z-index: 20;
@@ -407,8 +407,8 @@ a {
   left: 700px;
   top: 88px;
 
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat; */
 }
 
 .footer-contacts p {
