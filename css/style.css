@@ -97,7 +97,7 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.logo {
+.logo a {
   line-height: 0;
 }
 
@@ -315,18 +315,35 @@ a {
   font-weight: 700;
   color: #000000;
 }
-.motto-list {
+/* .motto-list {
   list-style: none;
+} */
+
+.motto-table{
+  border-collapse: collapse;
+}
+.motto-description-row td {
+  text-align: center;
 }
 
-.motto-item b {
+.motto-percent-row td {
+  padding-top: 45px;
+  padding-right: 25px;
+}
+
+.motto-percent-row b {
+
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
   color: #000000;
 }
 
-.motto-item span {
+.motto-percent-row sup {
+  font-size: 60%;
+}
+
+.motto-measure-row span {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
