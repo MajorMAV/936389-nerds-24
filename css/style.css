@@ -182,7 +182,6 @@ a {
 }
 .slides {
   position: relative;
-  /* padding: 0 20px; */
   margin-bottom: 81px;
 
   background-color: #eeeeee;
@@ -614,11 +613,12 @@ a {
 }
 .inner-page .stretcher {
   margin-bottom: 56px;
+  text-align: center;
+  padding: 79px 0 117px;
 }
 
 .inner-page h1{
   margin: 0;
-  padding: 79px 210px 117px 210px;
 }
 
 .content-wrapper {
