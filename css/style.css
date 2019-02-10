@@ -34,14 +34,20 @@ a {
   background-color: #eeeeee;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-navigation {
   display: flex;
-  width: 1160px;
+  /* width: 1160px; */
   padding-top: 49px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-bottom: 1px;
-  padding-left: 20px;
-  margin: 0 auto;
+  /* padding-left: 20px; */
+  /* margin: 0 auto; */
   justify-content: space-between;
 
   font-weight: 500;
@@ -101,10 +107,11 @@ a {
   line-height: 0;
 }
 
-.container {
+.main-content {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  /* width: 1200px; */
+  width: 100%;
   padding: 0;
   margin: 0 auto;
 }
@@ -175,7 +182,7 @@ a {
 }
 .slides {
   position: relative;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   margin-bottom: 81px;
 
   background-color: #eeeeee;
@@ -229,11 +236,11 @@ a {
   list-style: none;
 
 }
-
+/*
 .center-wrapper {
   margin: 0;
   padding: 0 20px;
-}
+} */
 
 .propositions {
   margin: 0;
@@ -374,7 +381,7 @@ a {
 }
 
 .main-footer {
-  width: 1200px;
+  width: 100%;
   padding: 0;
   /* margin-top: 80px;
   margin-left: auto;
@@ -598,16 +605,31 @@ a {
   border-color: #e74246
 }
 
+.stretcher {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color:  #eeeeee;
+}
+.inner-page .stretcher {
+  margin-bottom: 56px;
+}
+
 .inner-page h1{
   margin: 0;
-  margin-bottom: 56px;
-  padding: 79px 240px 117px 230px;
+  padding: 79px 210px 117px 210px;
 }
 
 .content-wrapper {
   display:flex;
   margin: 0;
   padding: 0 20px;
+  justify-content: space-between;
+}
+
+.catalog-wrapper {
+  display: flex;
   justify-content: space-between;
 }
 

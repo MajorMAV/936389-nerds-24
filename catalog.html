@@ -12,7 +12,7 @@
   <body class="inner-page">
 
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt=" Логотип студии NERD`S">
         </a>
@@ -30,9 +30,14 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
-      <div class="content-wrapper">
+    <main class="main-content">
+      <div class="stretcher">
+        <div class="container">
+
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+      <div class="catalog-wrapper container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
           <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
@@ -181,50 +186,52 @@
 
 
     <footer class="main-footer">
-      <div class="footer-contacts">
-          <img src="img/map.jpg" alt="Изображение карты. Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7(812)275-75-75">
-        <div class="address-box">
-          <b class="footer-studio-name">NЁRDS DESING STUDIO</b>
-          <p class="footer-studio-address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="footer-studio-phone">
-            тел. +7(812)275-75-75
-          </p>
-          <a class="button" href="#">Напишите нам</a>
+        <div class="container">
+          <div class="footer-contacts">
+            <img src="img/map.jpg" alt="Изображение карты. Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7(812)275-75-75">
+            <div class="address-box">
+              <b class="footer-studio-name">NЁRDS DESING STUDIO</b>
+              <p class="footer-studio-address">
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p class="footer-studio-phone">
+                тел. +7(812)275-75-75
+              </p>
+              <a class="button" href="#">Напишите нам</a>
+            </div>
+          </div>
+          <div class="social">
+            <ul class="social-buttons">
+              <li class="social-buttons-item social-vk"><a href="#">Вконтакте</a></li>
+              <li class="social-buttons-item social-fb"><a href="#">Фейсбук</a></li>
+              <li class="social-buttons-item social-insta"><a href="#">Инстаграм</a></li>
+            </ul>
+            <p class="social-invitation">
+              <b class="social-invitation-text">Давай дружить, это выгодно!</b>
+              <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="social">
-        <ul class="social-buttons">
-          <li class="social-buttons-item social-vk"><a href="#">Вконтакте</a></li>
-          <li class="social-buttons-item social-fb"><a href="#">Фейсбук</a></li>
-          <li class="social-buttons-item social-insta"><a href="#">Инстаграм</a></li>
-        </ul>
-        <p class="social-invitation">
-          <b class="social-invitation-text">Давай дружить, это выгодно!</b>
-          <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
-        </p>
-      </div>
-      <section class="write-to-us">
-        <h2>Напишите нам</h2>
-        <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="field-name">Ваше имя:</label>
-            <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="field-email">Ваш e-mail:</label>
-            <input type="email" id="field-email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="field-message">Текст письма:</label>
-            <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
-    </footer>
+        <section class="write-to-us">
+          <h2>Напишите нам</h2>
+          <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="field-name">Ваше имя:</label>
+              <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="field-email">Ваш e-mail:</label>
+              <input type="email" id="field-email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="field-message">Текст письма:</label>
+              <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </footer>
 
   </body>
 

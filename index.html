@@ -10,7 +10,7 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="logo" href="#">
           <img src="img/nerds-logo.svg" width="160" height="65" alt=" Логотип студии NERD`S">
         </a>
@@ -29,45 +29,47 @@
 
     </header>
 
-    <main class="container">
+    <main class="main-content">
       <h1 class="visually-hidden">Сайт дизайн-студии NERDS</h1>
       <div class="slides">
-        <ul class="slides-list">
-          <li class="slides-list-item slide-mobilephone visually-hidden" >
-            <div class="slide-wrapper">
-              <b>Долго, дорого,<br> скрупулезно.</b>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a class="button" href="#">Узнать больше</a>
-            </div>
-          </li>
-          <li class="slides-list-item slide-monitor">
-            <div class="slide-wrapper">
-              <b>Любим математику как никто другой</b>
-              <p>Никакого креактива, только математические формулы для расчета идеальных пропорций</p>
-              <a class="button" href="#">Узнать больше</a>
-            </div>
-          </li>
-          <li class="slides-list-item slide-tablet visually-hidden">
-            <div class="slide-wrapper">
-              <b>Только ночь,<br> только хардкор.</b>
-              <p>Работать днем, как все, Мы против этого.<br>Ближе к полуночи работа только начинается</p>
-              <a class="button" href="#">Узнать больше</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="slides-switch">
-          <li class="slides-switch-case">
-            <button class="slides-switch-button" type="button">Слайд №1</button>
-          </li>
-          <li class="slides-switch-case">
-            <button class="slides-switch-button" type="button">Слайд №2</button>
-          </li>
-          <li class="slides-switch-case">
-            <button class="slides-switch-button" type="button">Слайд №3</button>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="slides-list">
+            <li class="slides-list-item slide-mobilephone visually-hidden" >
+              <div class="slide-wrapper">
+                <b>Долго, дорого,<br> скрупулезно.</b>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slides-list-item slide-monitor">
+              <div class="slide-wrapper">
+                <b>Любим математику как никто другой</b>
+                <p>Никакого креактива, только математические формулы для расчета идеальных пропорций</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slides-list-item slide-tablet visually-hidden">
+              <div class="slide-wrapper">
+                <b>Только ночь,<br> только хардкор.</b>
+                <p>Работать днем, как все, Мы против этого.<br>Ближе к полуночи работа только начинается</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="slides-switch">
+            <li class="slides-switch-case">
+              <button class="slides-switch-button" type="button">Слайд №1</button>
+            </li>
+            <li class="slides-switch-case">
+              <button class="slides-switch-button" type="button">Слайд №2</button>
+            </li>
+            <li class="slides-switch-case">
+              <button class="slides-switch-button" type="button">Слайд №3</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="center-wrapper">
+      <div class="container">
         <section class="propositions">
           <h2 class="visually-hidden">Комерческие предложения</h2>
           <ul class="propositions-list">
@@ -184,30 +186,32 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-contacts">
-        <img src="img/map.jpg" alt="Изображение карты. Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7(812)275-75-75">
-        <div class="address-box">
-          <b class="footer-studio-name">NЁRDS DESING STUDIO</b>
-          <p class="footer-studio-address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="footer-studio-phone">
-            тел. +7(812)275-75-75
-          </p>
-          <a class="button" href="#">Напишите нам</a>
+      <div class="container">
+        <div class="footer-contacts">
+          <img src="img/map.jpg" alt="Изображение карты. Адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7(812)275-75-75">
+          <div class="address-box">
+            <b class="footer-studio-name">NЁRDS DESING STUDIO</b>
+            <p class="footer-studio-address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="footer-studio-phone">
+              тел. +7(812)275-75-75
+            </p>
+            <a class="button" href="#">Напишите нам</a>
+          </div>
         </div>
-      </div>
-      <div class="social">
-        <ul class="social-buttons">
-          <li class="social-buttons-item social-vk"><a href="#">Вконтакте</a></li>
-          <li class="social-buttons-item social-fb"><a href="#">Фейсбук</a></li>
-          <li class="social-buttons-item social-insta"><a href="#">Инстаграм</a></li>
-        </ul>
-        <p class="social-invitation">
-          <b class="social-invitation-text">Давай дружить, это выгодно!</b>
-          <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
-        </p>
+        <div class="social">
+          <ul class="social-buttons">
+            <li class="social-buttons-item social-vk"><a href="#">Вконтакте</a></li>
+            <li class="social-buttons-item social-fb"><a href="#">Фейсбук</a></li>
+            <li class="social-buttons-item social-insta"><a href="#">Инстаграм</a></li>
+          </ul>
+          <p class="social-invitation">
+            <b class="social-invitation-text">Давай дружить, это выгодно!</b>
+            <span class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</span>
+          </p>
+        </div>
       </div>
       <section class="write-to-us">
         <h2>Напишите нам</h2>
