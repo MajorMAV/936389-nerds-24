@@ -531,13 +531,8 @@ a {
 }
 
 .write-to-us {
-  /* margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px; */
   margin: 0 auto 50px;
   width: 960px;
-  height: 590px;
 
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
 }
@@ -830,7 +825,6 @@ a {
   font-weight: 500;
   color: #000000;
   text-align: center;
-  /* vertical-align: middle; */
 
   background-color: #eeeeee;
   border: none;
