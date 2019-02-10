@@ -35,9 +35,10 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .main-navigation {
@@ -108,9 +109,6 @@ a {
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  /* width: 1200px; */
   width: 100%;
   padding: 0;
   margin: 0 auto;
