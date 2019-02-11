@@ -393,12 +393,11 @@ a {
   height: 416px;
   margin-bottom: 69px;
 
-  background-image:url("../img/map-marker.png"),
-   url("../img/map.jpg");
+  background-image:url("../img/map-with-marker.jpg");
   background-repeat:no-repeat;
   background-origin: border-box;
-  background-size: auto, cover;
-  background-position: 67% 40%,50% 50%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .footer-contacts .container{
