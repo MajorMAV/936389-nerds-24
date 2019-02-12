@@ -43,12 +43,8 @@ a {
 
 .main-navigation {
   display: flex;
-  /* width: 1160px; */
   padding-top: 49px;
-  /* padding-right: 20px; */
   padding-bottom: 1px;
-  /* padding-left: 20px; */
-  /* margin: 0 auto; */
   justify-content: space-between;
 
   font-weight: 500;
@@ -56,9 +52,6 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-
-
-
 }
 
 .navigation-wrapper{
@@ -75,8 +68,9 @@ a {
 
 .site-navigation {
   display: flex;
-  width: 450px;
-  justify-content: space-between;
+  width: 500px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -85,11 +79,16 @@ a {
   width: 160px;
   padding: 0;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+}
+
+.site-navigation li{
+  margin-right: 47px;
 }
 
 .site-navigation a:hover,
@@ -107,6 +106,22 @@ a {
 .logo a {
   line-height: 0;
 }
+.basket{
+  position: relative;
+  padding-left: 50px;
+
+}
+.basket::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 10px;
+  top: 2px;
+  background-image: url("../img/cart-icon.svg");
+  overflow: hidden;
+}
+
 
 .main-content {
   width: 100%;
@@ -115,6 +130,8 @@ a {
 }
 
 .button {
+  display: inline-block;
+  padding: 16px 37px 16px;
 
   font: inherit;
   font-size: 16px;
@@ -127,7 +144,7 @@ a {
 
   background-color: #fb565a;
   border: none;
-  /*border-radius: 3px;*/
+  border-radius: 3px;
 }
 
 .button:hover,
@@ -180,7 +197,7 @@ a {
 }
 .slides {
   position: relative;
-  margin-bottom: 81px;
+  margin-bottom: 70px;
   top: -10px;
   background-color: #eeeeee;
 }
@@ -208,6 +225,7 @@ a {
 .slide-wrapper p:last-of-type {
   padding-top: 27px;
   margin: 0;
+  margin-bottom: 38px;
 }
 
 .slide-wrapper {
@@ -243,6 +261,10 @@ a {
   list-style: none;
 
 }
+.slide-wrapper .button{
+  padding-left: 54px;
+  padding-right: 54px;
+}
 /*
 .center-wrapper {
   margin: 0;
@@ -260,9 +282,13 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   list-style: none;
+}
+
+.propositions-list-item{
+  margin-right:  100px;
 }
 
 .propositions-list-item h3 {
@@ -270,6 +296,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .propositions-list-item p {
