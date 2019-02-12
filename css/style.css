@@ -505,11 +505,13 @@ a {
 
 .address-box {
   position: absolute;
+  box-sizing: border-box;
   z-index: 15;
-  width: 320px;
-  height: 310px;
+  width: 319px;
+  height: 308px;
   left: 20px;
   top: 54px;
+  padding: 49px 0 0 50px;
 
   background-color: #ffffff;
 }
@@ -531,13 +533,32 @@ a {
   color: #666666;
 }
 
+
+.footer-studio-address {
+  margin: 22px 0 20px;
+}
+.footer-studio-phone {
+  margin-bottom: 36px;
+}
+.address-box .button {
+  padding: 16px 44px;
+}
+
 .social {
   display: flex;
 }
 
 .social-invitation{
   width:560px;
+  margin: 0;
   margin-left: 140px;
+  padding-top: 6px;
+}
+
+.social-invitation-discount {
+  padding: 0;
+  margin: 0;
+  padding-top: 9px;
 }
 
 .social-invitation-text {
