@@ -181,7 +181,7 @@ a {
 .slides {
   position: relative;
   margin-bottom: 81px;
-
+  top: -10px;
   background-color: #eeeeee;
 }
 .slides-list {
