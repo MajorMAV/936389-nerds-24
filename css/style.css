@@ -200,6 +200,16 @@ a {
   font-weight: 500;
   color: #000000;
 }
+.slide-wrapper p:first-of-type {
+  padding-top: 77px;
+  margin: 0;
+}
+
+.slide-wrapper p:last-of-type {
+  padding-top: 27px;
+  margin: 0;
+}
+
 .slide-wrapper {
   width: 515px;
 }
@@ -207,7 +217,7 @@ a {
 .slide-mobilephone{
   background-image: url("../img/slide-mobile-phone.png");
   background-repeat: no-repeat;
-  background-position-x: 431px;
+  background-position: 431px 17px;
 }
 
 .slide-monitor {
@@ -219,7 +229,7 @@ a {
 .slide-tablet {
   background-image: url("../img/slide-tablet.png");
   background-repeat: no-repeat;
-  background-position-x: 401px;
+  background-position: 401px 18px;
 }
 
 .slides-switch {
