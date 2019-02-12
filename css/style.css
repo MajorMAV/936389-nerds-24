@@ -131,7 +131,7 @@ a {
 
 .button {
   display: inline-block;
-  padding: 16px 37px 16px;
+  padding: 16px 40px 16px;
 
   font: inherit;
   font-size: 16px;
@@ -197,8 +197,9 @@ a {
 }
 .slides {
   position: relative;
-  margin-bottom: 70px;
-  top: -10px;
+  margin-bottom: 80px;
+  /* top: -10px; */
+  margin-top: -10px;
   background-color: #eeeeee;
 }
 .slides-list {
@@ -292,6 +293,10 @@ a {
 }
 
 .propositions-list-item h3 {
+  margin: 0;
+  padding: 0;
+  padding-top:18px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -301,7 +306,7 @@ a {
 
 .propositions-list-item p {
   width: 250px;
-
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 24px;
 
