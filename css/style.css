@@ -443,22 +443,25 @@ a {
 }
 .partners {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 .partners-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-  padding-top: 5px;
+  padding: 5px 0 3px 0;
   margin-bottom: 34px;
 
   list-style: none;
 }
 .partners-item {
+  position: relative;
   margin: 0;
-  padding: 4px 30px 0 30px;;
+  padding: 4px 30px 0 30px;
+  width: 280px;
+  box-sizing: border-box;
 }
 .partners-item a {
   opacity: 0.2;
@@ -472,7 +475,38 @@ a {
 .partners-item a:active {
   opacity: 0.1;
 }
+.partner-htmlacademy {
+  padding: 17px 0 0 31px;
+}
+.partner-borodinski {
+  padding: 1px 0 0 33px;
+}
+.partner-pink {
+  padding: 20px 0 0 52px;
+}
+.partner-mishka {
+  padding: 7px 0 0 65px;
+}
+.partners-item.partnert-separator::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 19px;
 
+  background-color: #eeeeee;
+}
+
+.partners-item.partner-htmlacademy.partnert-separator::after {
+  right: -1px;
+}
+
+.partners-item.partner-borodinski.partnert-separator::after{
+  right: -8px;
+}
+.partners-item.partner-pink.partnert-separator::after {
+  right: -15px;
+}
 .main-footer {
   width: 100%;
   padding: 0;
