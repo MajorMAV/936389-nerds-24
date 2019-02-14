@@ -207,18 +207,20 @@
       <section class="write-to-us">
         <h2>Напишите нам</h2>
         <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="field-name">Ваше имя:</label>
-            <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="field-email">Ваш e-mail:</label>
-            <input type="email" id="field-email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="field-message">Текст письма:</label>
-            <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
-          </p>
+          <div class="form-fields-set">
+            <p class="form-field-wrapper">
+              <label for="field-name">Ваше имя:</label>
+              <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="form-field-wrapper">
+              <label for="field-email">Ваш e-mail:</label>
+              <input type="email" id="field-email" name="email" placeholder="email@example.com">
+            </p>
+            <p class="form-field-wrapper">
+              <label for="field-message">Текст письма:</label>
+              <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>

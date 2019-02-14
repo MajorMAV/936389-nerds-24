@@ -677,18 +677,51 @@ a {
 }
 
 .write-to-us {
+  box-sizing: border-box;
   margin: 0 auto 50px;
+  padding: 63px 100px 84px 98px;
   width: 960px;
 
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 20px 60px 0 rgba(0,0,0,0.75);
 }
+
+.form-fields-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+}
+
 .write-to-us h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 16px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
+
+.form-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  margin: 0;
+  margin-bottom: 9px;
+  padding-top: 25px;
+  padding-left: 2px;
+}
+.form-field-wrapper:nth-child(2n) {
+  padding-left: 40px;
+}
+.form-field-wrapper:last-child{
+  flex-grow: 1;
+}
+
 .write-to-us-form label {
+  margin-bottom: 9px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -697,6 +730,9 @@ a {
 
 .write-to-us-form input,
 .write-to-us-form textarea {
+  padding: 14px 0;
+  padding-left: 13px;
+
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -707,6 +743,12 @@ a {
   border-color: #d7dcde;
   border-style: solid;
   background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.write-to-us-form textarea{
+  padding-top: 11px;
+  min-height: 89px;
 }
 
 .write-to-us-form input:hover,
@@ -741,6 +783,12 @@ a {
 .write-to-us-form input:-webkit-autofill:invalid {
   -webkit-text-fill-color: #e74246;
   border-color: #e74246
+}
+
+.write-to-us-form .button {
+  margin-left:2px;
+  padding-left: 84px;
+  padding-right: 84px;
 }
 
 .stretcher {
