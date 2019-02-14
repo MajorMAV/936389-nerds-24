@@ -978,6 +978,7 @@ a {
 .templates-item {
   /* display: flex;
   flex-direction: column; */
+  position: relative;
   flex-basis: 360px;
   margin: 0;
   margin-bottom: 33px;
@@ -999,14 +1000,18 @@ a {
   opacity: 1;
 }
 
-.templates-item-hover{
-  display: flex;
-  width: 360px;
-  height: 231px;
+.templates-item-hover {
+  display: none;
+  position: absolute;
   left: 0;
   bottom: 0;
+  width: 360px;
+  height: 231px;
 
   background-color: #eeeeee;
+}
+.templates-item:hover .templates-item-hover{
+  display: flex;
 }
 
 .templates-item-hover h3 {
