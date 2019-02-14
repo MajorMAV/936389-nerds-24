@@ -747,14 +747,11 @@ a {
 }
 
 .write-to-us-form textarea{
-  position: relative;
   padding-top: 11px;
   resize: none;
   min-height: 89px;
 }
-.write-to-us-form .textarea-wrapper {
-  position: relative;
-}
+
 
 
 .write-to-us-form input:hover,
