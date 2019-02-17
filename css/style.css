@@ -815,37 +815,40 @@ a {
   right: 90px;
   width: 21px;
   height: 21px;
-  overflow: hidden;
+  /* overflow: hidden; */
   opacity: 0.3;
-  background-image: url(../img/close-cross.svg);
-  background-position: 50% 50%;
 }
-/* .close-form-button::before {
+
+.close-form-button::before,
+.close-form-button::after {
   position: absolute;
-  content:"";
-  top: 78px;
-  right: 90px;
-  width: 21px;
-  height: 21px;
-  overflow: hidden;
-  opacity: 0.3;
-  background-image: url(../img/close-cross.svg);
-  background-position: 50% 50%;
-} */
-/*
-.close-form-button:hover::before,
-.close-form-button:focus::before {
-  opacity: 1;
-} */
+  content: "";
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 27px;
+
+  background-color: #fb565a;
+}
+.close-form-button::before {
+  left: 8.5px;
+  top: -3px;
+
+  transform: rotate(-45deg);
+}
+
+.close-form-button::after {
+  left: 8.5px;
+  top: -3px;
+
+  transform: rotate(45deg);
+}
 
 .close-form-button:hover,
 .close-form-button:focus {
   opacity: 1;
 }
 
-/* .close-form-button:active::before {
-  opacity: 0.1;
-} */
 .close-form-button:active {
   opacity: 0.1;
 }
