@@ -1287,13 +1287,14 @@ fieldset.filter-feature{
   list-style: none;
 }
 .templates-item {
-  /* display: flex;
-  flex-direction: column; */
+
   position: relative;
   flex-basis: 360px;
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
+
+  overflow: hidden;
 }
 
 .templates-item::before {
@@ -1318,11 +1319,12 @@ fieldset.filter-feature{
 }
 
 .templates-item-hover {
-  display: none;
+  display: flex;
   position: absolute;
+  opacity: 0;
 
   left: 0;
-  bottom: 8px;
+  bottom: -368px;
   width: 360px;
   height: 231px;
   box-sizing: border-box;
@@ -1331,9 +1333,11 @@ fieldset.filter-feature{
   flex-direction: column;
 
   background-color: #eeeeee;
+  transition-duration: 0.5s;
 }
 .templates-item:hover .templates-item-hover{
-  display: flex;
+  opacity: 1;
+  bottom: 8px;
 }
 
 .templates-item-hover h3 {
