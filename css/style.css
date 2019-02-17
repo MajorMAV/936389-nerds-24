@@ -692,7 +692,11 @@ a {
   flex-wrap: wrap;
   margin-bottom: 38px;
 }
-
+.form-pair-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 .write-to-us h2 {
   margin: 0;
   padding: 0;
@@ -708,16 +712,17 @@ a {
 .form-field-wrapper {
   display: flex;
   flex-direction: column;
+
   min-width: 360px;
   margin: 0;
   margin-bottom: 9px;
   padding-top: 25px;
   padding-left: 2px;
 }
-.form-field-wrapper:nth-child(2n) {
+/* .form-field-wrapper:nth-child(2n) {
   padding-left: 40px;
-}
-.form-field-wrapper:last-child{
+} */
+.form-single-wrapper{
   flex-grow: 1;
 }
 
@@ -750,10 +755,12 @@ a {
 
 .write-to-us-form textarea{
   padding-top: 11px;
-  resize: none;
   min-height: 89px;
+  resize: none;
 }
-
+/* .write-to-us-form input {
+  width: 360px;
+} */
 
 
 .write-to-us-form input:hover,
