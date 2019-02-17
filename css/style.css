@@ -809,8 +809,18 @@ a {
 
   font-size: 0;
   line-height: 0;
+
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  overflow: hidden;
+  opacity: 0.3;
+  background-image: url(../img/close-cross.svg);
+  background-position: 50% 50%;
 }
-.close-form-button::before {
+/* .close-form-button::before {
   position: absolute;
   content:"";
   top: 78px;
@@ -821,14 +831,22 @@ a {
   opacity: 0.3;
   background-image: url(../img/close-cross.svg);
   background-position: 50% 50%;
-}
-
+} */
+/*
 .close-form-button:hover::before,
 .close-form-button:focus::before {
   opacity: 1;
+} */
+
+.close-form-button:hover,
+.close-form-button:focus {
+  opacity: 1;
 }
 
-.close-form-button:active::before {
+/* .close-form-button:active::before {
+  opacity: 0.1;
+} */
+.close-form-button:active {
   opacity: 0.1;
 }
 
