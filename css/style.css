@@ -218,12 +218,13 @@ a {
   font-weight: 500;
   color: #000000;
 }
-.slide-wrapper p:first-of-type {
+.slide-wrapper b {
+  display: block;
   padding-top: 77px;
   margin: 0;
 }
 
-.slide-wrapper p:last-of-type {
+.slide-wrapper p {
   padding-top: 27px;
   margin: 0;
   margin-bottom: 38px;
