@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -174,13 +175,14 @@
 
     <footer class="main-footer">
       <div class="footer-contacts">
-        <iframe
+        <!-- <iframe
           width=100%
           height="416"
           frameborder="0" style="border:0"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAolwKtLkJJ_-cRcrEzHEGfXMwAFJK_6z4
           &q=Санкт-Петербург,ул.+Б.+Конюшенная,+д.+19/8">
-        </iframe>
+        </iframe> -->
+        <div id="map" style="width:100%; height: 416px;"></div>
         <div class="container">
           <div class="address-box">
             <b class="footer-studio-name">NЁRDS DESIGN STUDIO</b>
@@ -233,6 +235,7 @@
         <a class="close-form-button">Закрыть</a>
       </section>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d2f669b1-7b5c-46b2-8a34-610f2bd8900a&lang=ru_RU" type="text/javascript"></script>
     <script src="js/features.js"></script>
   </body>
 </html>
