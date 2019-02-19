@@ -56,7 +56,7 @@
         myPlacemark = new ymaps.Placemark(
           [59.938750, 30.323155]
           , {
-            hintContent: "Собственный значок метки",
+            hintContent: "Б.Конюшенная, д. 19/8",
             balloonContent: "Б.Конюшенная, д. 19/8"
           }
           , {
