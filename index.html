@@ -174,6 +174,13 @@
 
     <footer class="main-footer">
       <div class="footer-contacts">
+        <iframe
+          width=100%
+          height="416"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAolwKtLkJJ_-cRcrEzHEGfXMwAFJK_6z4
+          &q=Санкт-Петербург,ул.+Б.+Конюшенная,+д.+19/8">
+        </iframe>
         <div class="container">
           <div class="address-box">
             <b class="footer-studio-name">NЁRDS DESIGN STUDIO</b>
@@ -226,46 +233,7 @@
         <a class="close-form-button">Закрыть</a>
       </section>
     </footer>
-    <script>
-      let buttons = document.getElementsByClassName("slides-switch-button");
-      for (let i= 0; i<buttons.length; i++){
-        buttons[i].addEventListener("click", (event)=>{
-
-          let slider_id = event.currentTarget.getAttribute("data-for");
-          if(slider_id)
-          {
-            Array.prototype.forEach.call(document.getElementsByClassName("active-button"), (element) => {
-              element.classList.remove("active-button");
-            });
-            Array.prototype.forEach.call(document.getElementsByClassName("slides-list-item is-showed"), (element)=>{
-              element.classList.remove("is-showed");
-            });
-            event.currentTarget.classList.add("active-button");
-            document.getElementById(slider_id).classList.add("is-showed");
-          };
-        });
-      };
-
-      document.getElementById("write-to-us-button").addEventListener("click", (event)=>{
-        if (event.currentTarget.nodeName !="A") return;
-        Array.prototype.forEach.call(document.getElementsByClassName("write-to-us"), (element)=>{
-          element.classList.add("is-showed")
-        });
-        event.preventDefault();
-      });
-
-      let close_buttons = document.getElementsByClassName("close-form-button");
-      Array.prototype.forEach.call(close_buttons, (element)=>{
-        element.addEventListener("click", (event)=>{
-          if (event.currentTarget.nodeName !="A") return;
-          Array.prototype.forEach.call(document.getElementsByClassName("popap is-showed"), (element)=>{
-            element.classList.remove("is-showed");
-          });
-          event.preventDefault();
-        });
-      });
-
-    </script>
+    <script src="js/features.js"></script>
   </body>
 </html>
 

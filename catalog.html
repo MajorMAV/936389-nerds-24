@@ -192,6 +192,13 @@
 
     <footer class="main-footer">
       <div class="footer-contacts">
+        <iframe
+          width=100%
+          height="416"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAolwKtLkJJ_-cRcrEzHEGfXMwAFJK_6z4
+          &q=Санкт-Петербург,ул.+Б.+Конюшенная,+д.+19/8">
+        </iframe>
         <div class="container">
           <div class="address-box">
             <b class="footer-studio-name">NЁRDS DESIGN STUDIO</b>
@@ -202,7 +209,7 @@
             <p class="footer-studio-phone">
               тел. +7 (812) 275-75-75
             </p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button" id="write-to-us-button" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -217,10 +224,9 @@
             <b class="social-invitation-text">Давайте дружить, это выгодно!</b>
             <p class="social-invitation-discount">Скидка 10% для друзей из социальных сетей</p>
           </div>
-
         </div>
       </div>
-      <section class="write-to-us">
+      <section class="write-to-us popap">
         <h2>Напишите нам</h2>
         <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
           <div class="form-fields-set">
@@ -243,8 +249,8 @@
         </form>
         <a class="close-form-button">Закрыть</a>
       </section>
-    </footer>
-
+      </footer>
+      <script src="js/features.js"></script>
   </body>
 
 </html>
