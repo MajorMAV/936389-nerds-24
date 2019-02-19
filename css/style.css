@@ -203,13 +203,30 @@ a {
   background-color: #eeeeee;
 }
 .slides-list {
+  position: relative;
   margin: 0;
   padding: 0;
+  width: 1160px;
+  min-height: 430px;
 
+  overflow: hidden;
   list-style: none;
 }
 .slides-list-item {
+  position: absolute;
+  width: 1160px;
   min-height: 430px;
+
+  right: -1160px;
+  top: 0;
+  opacity: 0;
+  transition-duration: 0.9s;
+
+}
+
+.slides-list-item.is-showed {
+  right: 0;
+  opacity: 1;
 }
 
 .slides-list-item b{
@@ -284,7 +301,7 @@ a {
   border-radius: 50%;
   border: none;
 }
-.selected-slide .slides-switch-button::after {
+.slides-switch-button.active-button::after {
   position: absolute;
   content: "";
   width: 4px;

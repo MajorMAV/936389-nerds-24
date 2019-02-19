@@ -36,21 +36,21 @@
       <div class="slides">
         <div class="container">
           <ul class="slides-list">
-            <li class="slides-list-item slide-mobilephone visually-hidden" >
+            <li class="slides-list-item slide-mobilephone is-showed" id="slide--1">
               <div class="slide-wrapper">
                 <b>Долго, дорого,<br> скрупулезно.</b>
                 <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                 <a class="button" href="#">Узнать больше</a>
               </div>
             </li>
-            <li class="slides-list-item slide-monitor visually-hidden">
+            <li class="slides-list-item slide-monitor" id="slide--2">
               <div class="slide-wrapper">
                 <b>Любим математику как никто другой</b>
                 <p>Никакого креактива, только математические формулы для расчета идеальных пропорций</p>
                 <a class="button" href="#">Узнать больше</a>
               </div>
             </li>
-            <li class="slides-list-item slide-tablet">
+            <li class="slides-list-item slide-tablet" id="slide--3">
               <div class="slide-wrapper">
                 <b>Только ночь,<br> только хардкор</b>
                 <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается</p>
@@ -59,14 +59,14 @@
             </li>
           </ul>
           <ul class="slides-switch">
-            <li class="slides-switch-case selected-slide">
-              <button class="slides-switch-button" type="button">Слайд №1</button>
+            <li class="slides-switch-case ">
+              <button class="slides-switch-button active-button" type="button" data-for="slide--1">Слайд №1</button>
             </li>
             <li class="slides-switch-case">
-              <button class="slides-switch-button" type="button">Слайд №2</button>
+              <button class="slides-switch-button" type="button" data-for="slide--2">Слайд №2</button>
             </li>
             <li class="slides-switch-case ">
-              <button class="slides-switch-button" type="button">Слайд №3</button>
+              <button class="slides-switch-button" type="button" data-for="slide--3">Слайд №3</button>
             </li>
           </ul>
         </div>
@@ -226,7 +226,26 @@
         <a class="close-form-button">Закрыть</a>
       </section>
     </footer>
-
+    <script>
+      let buttons = document.getElementsByClassName("slides-switch-button");
+      for (let i= 0; i<buttons.length; i++){
+        buttons[i].addEventListener("click", (event)=>{
+          debugger;
+          let slider_id = event.currentTarget.getAttribute("data-for");
+          if(slider_id)
+          {
+            Array.prototype.forEach.call(document.getElementsByClassName("active-button"), (element) => {
+              element.classList.remove("active-button");
+            });
+            Array.prototype.forEach.call(document.getElementsByClassName("is-showed"), (element)=>{
+              element.classList.remove("is-showed");
+            });
+            event.currentTarget.classList.add("active-button");
+            document.getElementById(slider_id).classList.add("is-showed");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
