@@ -543,9 +543,11 @@ a {
 }
 
 .main-footer {
+  position: relative;
   width: 100%;
   padding: 0;
   margin: 80px auto 0;
+
 }
 
 .footer-studio-name {
@@ -712,13 +714,30 @@ a {
 }
 
 .write-to-us {
-  position: relative;
+  position: absolute;
+  opacity: 0;
   box-sizing: border-box;
   margin: 0 auto 50px;
   padding: 63px 100px 84px 98px;
   width: 960px;
+  left: 50%;
+  margin-left: -480px;
+  top: -120px;
+  z-index: 0;
+
+  color: #283136;
+
+  background-color: #ffffff;
 
   box-shadow: 0 20px 60px 0 rgba(0,0,0,0.75);
+  transform: scale(0);
+  transition-property: opacity, transform;
+  transition-duration: 0.9s;
+}
+.write-to-us.is-showed {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 20;
 }
 
 .form-fields-set {

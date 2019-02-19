@@ -184,7 +184,7 @@
             <p class="footer-studio-phone">
               тел. +7 (812) 275-75-75
             </p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button" id="write-to-us-button" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
 
         </div>
       </div>
-      <section class="write-to-us">
+      <section class="write-to-us popap">
         <h2>Напишите нам</h2>
         <form class="write-to-us-form" method="POST" action="https://echo.htmlacademy.ru">
           <div class="form-fields-set">
@@ -230,21 +230,41 @@
       let buttons = document.getElementsByClassName("slides-switch-button");
       for (let i= 0; i<buttons.length; i++){
         buttons[i].addEventListener("click", (event)=>{
-          debugger;
+
           let slider_id = event.currentTarget.getAttribute("data-for");
           if(slider_id)
           {
             Array.prototype.forEach.call(document.getElementsByClassName("active-button"), (element) => {
               element.classList.remove("active-button");
             });
-            Array.prototype.forEach.call(document.getElementsByClassName("is-showed"), (element)=>{
+            Array.prototype.forEach.call(document.getElementsByClassName("slides-list-item is-showed"), (element)=>{
               element.classList.remove("is-showed");
             });
             event.currentTarget.classList.add("active-button");
             document.getElementById(slider_id).classList.add("is-showed");
-          }
+          };
         });
-      }
+      };
+
+      document.getElementById("write-to-us-button").addEventListener("click", (event)=>{
+        if (event.currentTarget.nodeName !="A") return;
+        Array.prototype.forEach.call(document.getElementsByClassName("write-to-us"), (element)=>{
+          element.classList.add("is-showed")
+        });
+        event.preventDefault();
+      });
+
+      let close_buttons = document.getElementsByClassName("close-form-button");
+      Array.prototype.forEach.call(close_buttons, (element)=>{
+        element.addEventListener("click", (event)=>{
+          if (event.currentTarget.nodeName !="A") return;
+          Array.prototype.forEach.call(document.getElementsByClassName("popap is-showed"), (element)=>{
+            element.classList.remove("is-showed");
+          });
+          event.preventDefault();
+        });
+      });
+
     </script>
   </body>
 </html>
