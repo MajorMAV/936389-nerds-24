@@ -313,6 +313,7 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   border: none;
+  outline: none;
 }
 .slides-switch-button.active-button::after {
   position: absolute;
