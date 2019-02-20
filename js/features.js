@@ -40,7 +40,7 @@
   ymaps.ready(init);
     function init(){
         // Создание карты.
-        debugger;
+        // debugger;
         let myMap = new ymaps.Map("map", {
             // Координаты центра карты.
             // Порядок по умолчанию: «широта, долгота».

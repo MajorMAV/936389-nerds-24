@@ -343,6 +343,7 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
   /* justify-content: space-between; */
 
   list-style: none;
@@ -350,6 +351,9 @@ a {
 
 .propositions-list-item{
   margin-right:  100px;
+}
+.propositions-list-item:nth-of-type(3n){
+  margin-right: 0;
 }
 
 .propositions-list-item h3 {
