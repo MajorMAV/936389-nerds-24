@@ -727,7 +727,7 @@ a {
 }
 
 .write-to-us {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   box-sizing: border-box;
   margin: 0 auto 50px;
@@ -735,7 +735,7 @@ a {
   width: 960px;
   left: 50%;
   margin-left: -480px;
-  top: -120px;
+  top: 120px;
   z-index: 0;
 
   color: #283136;
