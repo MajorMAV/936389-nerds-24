@@ -113,7 +113,10 @@ a {
 /* .logo a {
   line-height: 0;
 } */
-
+.logo {
+  position: relative;
+  z-index: 5;
+}
 .logo:active{
   opacity: 0.3;
 }
@@ -226,6 +229,7 @@ a {
   list-style: none;
 }
 .slides-list-item {
+  display: none;
   position: absolute;
   width: 1160px;
   min-height: 430px;
@@ -238,6 +242,7 @@ a {
 }
 
 .slides-list-item.is-showed {
+  display: block;
   right: 0;
   opacity: 1;
 }
@@ -313,7 +318,7 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   border: none;
-  outline: none;
+  /* outline: none; */
 }
 .slides-switch-button.active-button::after {
   position: absolute;
