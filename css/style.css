@@ -1397,7 +1397,8 @@ fieldset.filter-feature{
   background-image: url("../img/browser.svg");
 }
 
-.templates-item:hover::before {
+.templates-item:hover::before,
+.templates-item:focus-within::before {
   opacity: 1;
 }
 
@@ -1422,9 +1423,11 @@ fieldset.filter-feature{
   flex-direction: column;
 
   background-color: #eeeeee;
-  transition-duration: 0.5s;
+  /* transition-duration: 0.5s; */
 }
-.templates-item:hover .templates-item-hover{
+
+.templates-item:hover .templates-item-hover,
+.templates-item:focus-within .templates-item-hover {
   opacity: 1;
   bottom: 8px;
 }
@@ -1442,9 +1445,11 @@ fieldset.filter-feature{
   text-transform: uppercase;
 
 }
+
 .templates-item-info{
    padding: 0px 53px;
 }
+
 .templates-item-hover p {
   margin: 0;
   padding: 0;
@@ -1456,9 +1461,11 @@ fieldset.filter-feature{
   text-align: center;
 
 }
+
 .templates-item-hover .button {
   padding: 16px 60px;
 }
+
 .templates-item-hover .button:active {
     color: rgba(255, 255, 255, 1);
 }
