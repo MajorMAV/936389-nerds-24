@@ -756,13 +756,18 @@ a {
 
   box-shadow: 0 20px 60px 0 rgba(0,0,0,0.75);
   transform: scale(0);
-  transition-property: opacity, transform;
-  transition-duration: 0.9s;
+}
+@keyframes modal-showed{
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 20;
+  }
 }
 .write-to-us.is-showed {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 20;
+  animation-name: modal-showed;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
 }
 
 .form-fields-set {
