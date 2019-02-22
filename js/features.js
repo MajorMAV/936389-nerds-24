@@ -1,25 +1,19 @@
 (function(){
 
-
-
-  document.getElementById("write-to-us-button").addEventListener("click", function(event){
-    if (event.currentTarget.nodeName !="A") return;
-    Array.prototype.forEach.call(document.getElementsByClassName("write-to-us"), function(element){
-      element.classList.add("is-showed")
-    });
-    event.preventDefault();
+  document.getElementById("write-to-us-button").addEventListener("click", function(evt){
+    if (evt.currentTarget.nodeName !="A") return;
+    evt.preventDefault();
+    document.querySelector(".write-to-us").classList.add("is-showed");
   });
 
-  let close_buttons = document.getElementsByClassName("close-form-button");
-  Array.prototype.forEach.call(close_buttons, function(element){
-    element.addEventListener("click", function(event){
-      if (event.currentTarget.nodeName !="A") return;
-      Array.prototype.forEach.call(document.getElementsByClassName("popap is-showed"), function(element){
-        element.classList.remove("is-showed");
-      });
+  let close_buttons = document.querySelectorAll(".close-form-button");
+  for( let i = 0; i <close_buttons.length; i++) {
+    close_buttons[i].addEventListener("click", function(evt){
+      if (evt.currentTarget.nodeName !="A") return;
       event.preventDefault();
+      document.querySelector(".popap.is-showed").classList.remove("is-showed");
     });
-  });
+  };
 
   ymaps.ready(init);
     function init(){
@@ -62,7 +56,7 @@
 
 function slider_switch_click_handler(evt){
       debugger;
-      let slider_id = event.currentTarget.getAttribute("data-for");
+      let slider_id = evt.currentTarget.getAttribute("data-for");
       if(slider_id)
       {
         let forDeactivateButtons = document.querySelectorAll(".active-button");
