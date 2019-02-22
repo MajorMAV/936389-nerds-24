@@ -3,7 +3,9 @@
   document.getElementById("write-to-us-button").addEventListener("click", function(evt){
     if (evt.currentTarget.nodeName !="A") return;
     evt.preventDefault();
-    document.querySelector(".write-to-us").classList.add("is-showed");
+    let modal_window = document.querySelector(".write-to-us");
+    modal_window.classList.add("is-showed");
+    modal_window.querySelector("input").focus();
   });
 
   let close_buttons = document.querySelectorAll(".close-form-button");
