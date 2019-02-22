@@ -1413,9 +1413,9 @@ fieldset.filter-feature{
   opacity: 1;
 }
 
-.templates-item:focus-within::before {
+/* .templates-item:focus-within::before {
   opacity: 1;
-}
+} */
 
 .templates-item img {
   box-sizing: border-box;
@@ -1429,7 +1429,8 @@ fieldset.filter-feature{
   opacity: 0;
 
   left: 0;
-  bottom: -368px;
+  bottom: 8px;
+  /* top: 384px; */
   width: 360px;
   height: 231px;
   box-sizing: border-box;
@@ -1441,15 +1442,34 @@ fieldset.filter-feature{
   /* transition-duration: 0.5s; */
 }
 
-.templates-item:hover .templates-item-hover{
-  opacity: 1;
-  bottom: 8px;
+@keyframes hover_show {
+  0% {
+    bottom: 180px;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 8px;
+    opacity: 1;
+  }
 }
 
-.templates-item:focus-within .templates-item-hover{
+.templates-item:hover .templates-item-hover{
+  animation-name: hover_show;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.hover-showed {
+  animation-name: hover_show;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+/* .templates-item:focus-within .templates-item-hover{
   opacity: 1;
   bottom: 8px;
-}
+} */
 
 .templates-item-hover h3 {
   margin: 0;

@@ -16,6 +16,12 @@
       document.querySelector(".popap.is-showed").classList.remove("is-showed");
     });
   };
+  debugger;
+  let template_items = document.querySelectorAll(".templates-item");
+  for( let i = 0; i < template_items.length; i++){
+    template_items[i].addEventListener("focus",onfocus_template,true);
+    template_items[i].addEventListener("blur",onblur_template,true);
+  }
 
   ymaps.ready(init);
     function init(){
@@ -84,4 +90,12 @@ function slider_switch_click_handler(evt){
         }
       };
 
+}
+function onfocus_template(evt) {
+  //debugger;
+    this.querySelector(".templates-item-hover").classList.add("hover-showed");
+}
+function onblur_template(evt){
+  //debugger;
+  this.querySelector(".templates-item-hover").classList.remove("hover-showed");
 }
