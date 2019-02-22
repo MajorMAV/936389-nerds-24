@@ -1,22 +1,6 @@
 (function(){
 
-  let buttons = document.getElementsByClassName("slides-switch-button");
-  for (let i= 0; i<buttons.length; i++){
-    buttons[i].addEventListener("click", function(event){
-      let slider_id = event.currentTarget.getAttribute("data-for");
-      if(slider_id)
-      {
-        Array.prototype.forEach.call(document.getElementsByClassName("active-button"), function(element){
-          element.classList.remove("active-button");
-        });
-        Array.prototype.forEach.call(document.getElementsByClassName("slides-list-item is-showed"), function(element){
-          element.classList.remove("is-showed");
-        });
-        event.currentTarget.classList.add("active-button");
-        document.getElementById(slider_id).classList.add("is-showed");
-      };
-    });
-  };
+
 
   document.getElementById("write-to-us-button").addEventListener("click", function(event){
     if (event.currentTarget.nodeName !="A") return;
@@ -75,3 +59,31 @@
         myMap.geoObjects.add(myPlacemark);
     }
 })()
+
+function slider_switch_click_handler(evt){
+      debugger;
+      let slider_id = event.currentTarget.getAttribute("data-for");
+      if(slider_id)
+      {
+        let forDeactivateButtons = document.querySelectorAll(".active-button");
+        for (let i = 0; i< forDeactivateButtons.length; i++){
+          forDeactivateButtons[i].classList.remove("active-button");
+        };
+        let forDeactivateSlides = document.querySelectorAll(".slides-list-item.is-showed");
+        for (let i = 0; i < forDeactivateSlides.length; i++){
+          let forDeactivateLinks = forDeactivateSlides[i].querySelectorAll("a");
+          for( let j = 0; j < forDeactivateLinks.length; j++){
+            forDeactivateLinks[j].setAttribute("tabindex","-1");
+          }
+          forDeactivateSlides[i].classList.remove("is-showed");
+        };
+        evt.currentTarget.classList.add("active-button");
+        let activeSlide = document.getElementById(slider_id);
+        activeSlide.classList.add("is-showed");
+        let forActivateLinks = activeSlide.querySelectorAll("a");
+        for( let i = 0; i < forActivateLinks.length; i++){
+          forActivateLinks[i].setAttribute("tabindex","0");
+        }
+      };
+
+}

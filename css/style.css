@@ -229,7 +229,7 @@ a {
   list-style: none;
 }
 .slides-list-item {
-  display: none;
+
   position: absolute;
   width: 1160px;
   min-height: 430px;
@@ -242,7 +242,7 @@ a {
 }
 
 .slides-list-item.is-showed {
-  display: block;
+
   right: 0;
   opacity: 1;
 }
@@ -300,6 +300,7 @@ a {
   padding: 0;
   left: 908px;
   top: 308px;
+  z-index: 5;
 
   list-style: none;
 }
