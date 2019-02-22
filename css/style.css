@@ -1409,7 +1409,10 @@ fieldset.filter-feature{
   background-image: url("../img/browser.svg");
 }
 
-.templates-item:hover::before,
+.templates-item:hover::before{
+  opacity: 1;
+}
+
 .templates-item:focus-within::before {
   opacity: 1;
 }
@@ -1438,8 +1441,12 @@ fieldset.filter-feature{
   /* transition-duration: 0.5s; */
 }
 
-.templates-item:hover .templates-item-hover,
-.templates-item:focus-within .templates-item-hover {
+.templates-item:hover .templates-item-hover{
+  opacity: 1;
+  bottom: 8px;
+}
+
+.templates-item:focus-within .templates-item-hover{
   opacity: 1;
   bottom: 8px;
 }
