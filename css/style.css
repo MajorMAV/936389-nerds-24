@@ -261,12 +261,13 @@ a {
 
 .slide-wrapper p {
   padding-top: 27px;
+  padding-right: 10px;
   margin: 0;
   margin-bottom: 38px;
 }
 
 .slide-wrapper {
-  width: 517px;
+  width: 519px;
 }
 
 .slide-mobilephone{
