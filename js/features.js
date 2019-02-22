@@ -69,6 +69,7 @@ function slider_switch_click_handler(evt){
         for (let i = 0; i< forDeactivateButtons.length; i++){
           forDeactivateButtons[i].classList.remove("active-button");
         };
+
         let forDeactivateSlides = document.querySelectorAll(".slides-list-item.is-showed");
         for (let i = 0; i < forDeactivateSlides.length; i++){
           let forDeactivateLinks = forDeactivateSlides[i].querySelectorAll("a");
@@ -77,6 +78,7 @@ function slider_switch_click_handler(evt){
           }
           forDeactivateSlides[i].classList.remove("is-showed");
         };
+
         evt.currentTarget.classList.add("active-button");
         let activeSlide = document.getElementById(slider_id);
         activeSlide.classList.add("is-showed");
