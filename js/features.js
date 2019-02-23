@@ -10,13 +10,14 @@ document.querySelector("#write-to-us-button").addEventListener("click", function
 document.querySelector(".close-form-button").addEventListener("click", function(evt){
   event.preventDefault();
   document.querySelector(".popap.is-showed").classList.remove("is-showed");
+  modalWindow.classList.remove("modal-error");
 });
 
 
 let template_items = document.querySelectorAll(".templates-item");
 for( let i = 0; i < template_items.length; i++){
-  template_items[i].addEventListener("focus",onfocus_template,true);
-  template_items[i].addEventListener("blur",onblur_template,true);
+  template_items[i].addEventListener("focus",onfocusTemplate,true);
+  template_items[i].addEventListener("blur",onblurTemplate,true);
 };
 
 ymaps.ready(init);
@@ -56,11 +57,11 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 };
 
-function onfocus_template(evt) {
+function onfocusTemplate(evt) {
   //debugger;
     this.querySelector(".templates-item-hover").classList.add("hover-showed");
 }
-function onblur_template(evt){
+function onblurTemplate(evt){
   //debugger;
   this.querySelector(".templates-item-hover").classList.remove("hover-showed");
 }
@@ -85,3 +86,21 @@ function sliderSwitchClickHandler(num){
   slideLinks[num].setAttribute("tabindex","0");
 
 }
+
+let modalWindow = document.querySelector(".write-to-us");
+let formFields = modalWindow.querySelectorAll(".form-field");
+
+modalWindow.querySelector("[type='submit']").addEventListener("click", function(evt){
+  let res = true;
+  modalWindow.classList.remove("modal-error");
+  modalWindow.offsetWidth = modalWindow.offsetWidth;
+  for( let i = 0; i < formFields.length; i++){
+    res = res && formFields[i].value && formFields[i].checkValidity();
+  }
+  if (!res) {
+    evt.preventDefault();
+    modalWindow.classList.add("modal-error");
+
+  }
+})
+

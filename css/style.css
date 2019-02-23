@@ -762,16 +762,44 @@ a {
   transform: scale(0);
 }
 @keyframes modal-showed{
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    z-index: 0;
+  }
   100% {
     opacity: 1;
     transform: scale(1);
     z-index: 20;
   }
 }
+
+@keyframes shake{
+  0%, 100% {
+    transform: translateX(0);
+
+  }
+  10%,30%,50%,70%,90% {
+    transform: translateX(-10px);
+
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+
+  }
+}
 .write-to-us.is-showed {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 20;
+
   animation-name: modal-showed;
   animation-duration: 0.9s;
-  animation-fill-mode: forwards;
+
+}
+.write-to-us.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
 
 .form-fields-set {
