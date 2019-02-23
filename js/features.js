@@ -14,11 +14,7 @@ document.querySelector(".close-form-button").addEventListener("click", function(
 });
 
 
-let template_items = document.querySelectorAll(".templates-item");
-for( let i = 0; i < template_items.length; i++){
-  template_items[i].addEventListener("focus",onfocusTemplate,true);
-  template_items[i].addEventListener("blur",onblurTemplate,true);
-};
+
 
 ymaps.ready(init);
 function init(){
@@ -57,14 +53,33 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 };
 
+let template_items = document.querySelectorAll(".templates-item");
+document.addEventListener("focusin", onfocusTemplate);
+
+
 function onfocusTemplate(evt) {
-  //debugger;
-    this.querySelector(".templates-item-hover").classList.add("hover-showed");
+  for(let i = 0; i< template_items.length;i++){
+    if (template_items[i].querySelector("a:focus"))
+    {
+      if(template_items[i].querySelector("hover-showed")){
+        return;
+      }
+      else {
+        let forClear = this.querySelector(".templates-item-hover.hover-showed");
+        if(forClear){
+          forClear.classList.remove("hover-showed");
+        }
+        template_items[i].querySelector(".templates-item-hover").classList.add("hover-showed");
+        return;
+      }
+    }
+  }
+  let forClear = this.querySelector(".templates-item-hover.hover-showed");
+  if(forClear){
+    forClear.classList.remove("hover-showed");
+  }
 }
-function onblurTemplate(evt){
-  //debugger;
-  this.querySelector(".templates-item-hover").classList.remove("hover-showed");
-}
+
 
 let slides = document.querySelectorAll(".slides-list-item");
 let slideButtons = document.querySelectorAll(".slides-switch-button");
