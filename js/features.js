@@ -55,31 +55,53 @@ function init(){
 
 let template_items = document.querySelectorAll(".templates-item");
 document.addEventListener("focusin", onfocusTemplate);
+document.addEventListener("focusout",onfocusoutTemplate);
 
 
 function onfocusTemplate(evt) {
   for(let i = 0; i< template_items.length;i++){
+    // Ищем карточку в которой ссылка с фокусом
     if (template_items[i].querySelector("a:focus"))
     {
+      // Если ховер карточки показан - выходим
       if(template_items[i].querySelector("hover-showed")){
         return;
       }
       else {
+        // Скрываем ховер у передыдущей карточки с посказанным ховером, если такая еть
         let forClear = this.querySelector(".templates-item-hover.hover-showed");
         if(forClear){
           forClear.classList.remove("hover-showed");
         }
+        // Показываем ховер у текущей карточки
         template_items[i].querySelector(".templates-item-hover").classList.add("hover-showed");
         return;
       }
     }
   }
+  // Если сфокусированный элемент не пренадлежит ни одной карточке,
+  // то ищем карточку с показанным ховером (если такая есть) и скрываем ховер
   let forClear = this.querySelector(".templates-item-hover.hover-showed");
   if(forClear){
     forClear.classList.remove("hover-showed");
   }
 }
 
+//Одрабатка события потери фокуса необходима на случай, когда ссылка в ховере
+// потеряла фокус ввода, но при этом ни какой другой элемент страницы фокус ввода не получил
+function onfocusoutTemplate(){
+  setTimeout(delayFocusoutHandler,100);
+}
+
+function delayFocusoutHandler(){
+  //Проверяем есть ли сфокусированная ссылка в карточах
+  if(document.querySelector(".templates-item a:focus")) return;
+  //Фокуса в карточках нет - убираем с экрана ховер
+  let forClear = document.querySelector(".templates-item-hover.hover-showed");
+  if(forClear){
+    forClear.classList.remove("hover-showed");
+  }
+}
 
 let slides = document.querySelectorAll(".slides-list-item");
 let slideButtons = document.querySelectorAll(".slides-switch-button");
