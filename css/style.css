@@ -41,6 +41,10 @@ a {
   box-sizing: border-box;
 }
 
+.main-header-background{
+  background-color: #eeeeee;
+}
+
 .main-navigation {
   display: flex;
   padding-top: 49px;
@@ -940,7 +944,7 @@ a {
 
   background-color:  #eeeeee;
 }
-.inner-page .stretcher {
+.stretcher .container{
   margin-bottom: 57px;
   text-align: center;
   padding: 65px 0 108px;
