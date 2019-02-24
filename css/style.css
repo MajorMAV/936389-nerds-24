@@ -223,6 +223,11 @@ a {
   margin-top: -10px;
   background-color: #eeeeee;
 }
+
+.slides-wrapper {
+  position: relative;
+}
+
 .slides-list {
   position: relative;
   margin: 0;
@@ -304,7 +309,7 @@ a {
   position: absolute;
   margin: 0;
   padding: 0;
-  left: 908px;
+  left: 556px;
   top: 308px;
   z-index: 5;
 
