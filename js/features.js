@@ -1,9 +1,9 @@
 
-let modal_window = document.querySelector(".write-to-us");
+let modalWindow = document.querySelector(".write-to-us");
 document.querySelector("#write-to-us-button").addEventListener("click", function(evt){
   evt.preventDefault();
-  modal_window.classList.add("is-showed");
-  modal_window.querySelector("input").focus();
+  modalWindow.classList.add("is-showed");
+  modalWindow.querySelector("input").focus();
 });
 
 
@@ -53,18 +53,18 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 };
 
-let template_items = document.querySelectorAll(".templates-item");
-document.addEventListener("focusin", onfocusTemplate);
-document.addEventListener("focusout",onfocusoutTemplate);
+let templateItems = document.querySelectorAll(".templates-item");
+document.addEventListener("focusin", onFocusTemplate);
+document.addEventListener("focusout",onFocusoutTemplate);
 
 
-function onfocusTemplate(evt) {
-  for(let i = 0; i< template_items.length;i++){
+function onFocusTemplate(evt) {
+  for(let i = 0; i< templateItems.length;i++){
     // Ищем карточку в которой ссылка с фокусом
-    if (template_items[i].querySelector("a:focus"))
+    if (templateItems[i].querySelector("a:focus"))
     {
       // Если ховер карточки показан - выходим
-      if(template_items[i].querySelector("hover-showed")){
+      if(templateItems[i].querySelector("hover-showed")){
         return;
       }
       else {
@@ -74,7 +74,7 @@ function onfocusTemplate(evt) {
           forClear.classList.remove("hover-showed");
         }
         // Показываем ховер у текущей карточки
-        template_items[i].querySelector(".templates-item-hover").classList.add("hover-showed");
+        templateItems[i].querySelector(".templates-item-hover").classList.add("hover-showed");
         return;
       }
     }
@@ -89,7 +89,7 @@ function onfocusTemplate(evt) {
 
 //Одрабатка события потери фокуса необходима на случай, когда ссылка в ховере
 // потеряла фокус ввода, но при этом ни какой другой элемент страницы фокус ввода не получил
-function onfocusoutTemplate(){
+function onFocusoutTemplate(){
   setTimeout(delayFocusoutHandler,100);
 }
 
@@ -123,7 +123,7 @@ function sliderSwitchClickHandler(num){
 
 }
 
-let modalWindow = document.querySelector(".write-to-us");
+//let modalWindow = document.querySelector(".write-to-us");
 let formFields = modalWindow.querySelectorAll(".form-field");
 
 modalWindow.querySelector("[type='submit']").addEventListener("click", function(evt){
