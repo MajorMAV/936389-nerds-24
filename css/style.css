@@ -114,9 +114,7 @@ a {
 .active-page {
   border-bottom: 2px solid #fb565a;
 }
-/* .logo a {
-  line-height: 0;
-} */
+
 .logo {
   position: relative;
   z-index: 5;
@@ -219,8 +217,8 @@ a {
 .slides {
   position: relative;
   margin-bottom: 80px;
-  /* top: -10px; */
   margin-top: -10px;
+
   background-color: #eeeeee;
 }
 
@@ -330,8 +328,8 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   border: none;
-  /* outline: none; */
 }
+
 .slides-switch-button.active-button::after {
   position: absolute;
   content: "";
@@ -344,11 +342,6 @@ a {
   background-color: transparent;
   border-radius: 50%;
 }
-/*
-.center-wrapper {
-  margin: 0;
-  padding: 0 20px;
-} */
 
 .propositions {
   margin: 0;
@@ -362,7 +355,6 @@ a {
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 
   list-style: none;
 }
@@ -622,16 +614,6 @@ a {
   background-color: #ffffff;
 }
 
-/* .address-box::after {
-  content: url("../img/map-marker.png");
-  position: absolute;
-  z-index: 20;
-  width:231px;
-  height:190px;
-  left: 690px;
-  top: 47px;
-} */
-
 .footer-contacts p {
   font-size: 16px;
   line-height: 18px;
@@ -840,9 +822,7 @@ a {
   padding-top: 25px;
   padding-left: 2px;
 }
-/* .form-field-wrapper:nth-child(2n) {
-  padding-left: 40px;
-} */
+
 .form-single-wrapper{
   flex-grow: 1;
 }
@@ -859,7 +839,6 @@ a {
 .write-to-us-form input,
 .write-to-us-form textarea {
   padding: 14px 13px;
-  /* padding-left: 13px; */
 
   font: inherit;
   font-size: 16px;
@@ -922,19 +901,18 @@ a {
 }
 
 .close-form-button {
+  position: absolute;
   margin: 0;
   padding: 0;
-
-  font-size: 0;
-  line-height: 0;
-
-  position: absolute;
   top: 78px;
   right: 90px;
   width: 21px;
   height: 21px;
-  /* overflow: hidden; */
+
   opacity: 0.3;
+
+  font-size: 0;
+  line-height: 0;
 }
 
 .close-form-button::before,
@@ -1462,10 +1440,6 @@ fieldset.filter-feature{
   opacity: 1;
 }
 
-/* .templates-item:focus-within::before {
-  opacity: 1;
-} */
-
 .templates-item img {
   box-sizing: border-box;
   outline: 1px solid #e5e5e5;
@@ -1479,7 +1453,6 @@ fieldset.filter-feature{
 
   left: 0;
   bottom: 8px;
-  /* top: 384px; */
   width: 360px;
   height: 231px;
   box-sizing: border-box;
@@ -1488,7 +1461,6 @@ fieldset.filter-feature{
   flex-direction: column;
 
   background-color: #eeeeee;
-  /* transition-duration: 0.5s; */
 }
 
 @keyframes hover_show {
@@ -1514,11 +1486,6 @@ fieldset.filter-feature{
   animation-duration: 0.9s;
   animation-fill-mode: forwards;
 }
-
-/* .templates-item:focus-within .templates-item-hover{
-  opacity: 1;
-  bottom: 8px;
-} */
 
 .templates-item-hover h3 {
   margin: 0;
