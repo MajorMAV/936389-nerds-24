@@ -19,7 +19,7 @@ document.querySelector(".close-form-button").addEventListener("click", function(
 ymaps.ready(init);
 function init(){
   // Создание карты.
-  // debugger;
+
   let myMap = new ymaps.Map("map", {
       // Координаты центра карты.
       // Порядок по умолчанию: «широта, долгота».
@@ -107,7 +107,6 @@ let slides = document.querySelectorAll(".slides-list-item");
 let slideButtons = document.querySelectorAll(".slides-switch-button");
 let slideLinks = document.querySelectorAll(".slides-list-item .button");
 function sliderSwitchClickHandler(num){
-  debugger;
   for( let i = 0; i<slides.length; i++){
     slides[i].classList.remove("is-showed");
   }
