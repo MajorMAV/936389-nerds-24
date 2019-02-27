@@ -58,19 +58,19 @@ document.addEventListener("focusin", onFocusTemplate);
 document.addEventListener("focusout",onFocusoutTemplate);
 
 
-function onFocusTemplate(evt) {
-  for(let i = 0; i< templateItems.length;i++){
+function onFocusTemplate(evt){
+  for (let i = 0; i < templateItems.length; i++) {
     // Ищем карточку в которой ссылка с фокусом
     if (templateItems[i].querySelector("a:focus"))
     {
       // Если ховер карточки показан - выходим
-      if(templateItems[i].querySelector("hover-showed")){
+      if (templateItems[i].querySelector("hover-showed")) {
         return;
       }
       else {
         // Скрываем ховер у передыдущей карточки с посказанным ховером, если такая еть
         let forClear = this.querySelector(".templates-item-hover.hover-showed");
-        if(forClear){
+        if (forClear) {
           forClear.classList.remove("hover-showed");
         }
         // Показываем ховер у текущей карточки
@@ -82,46 +82,44 @@ function onFocusTemplate(evt) {
   // Если сфокусированный элемент не пренадлежит ни одной карточке,
   // то ищем карточку с показанным ховером (если такая есть) и скрываем ховер
   let forClear = this.querySelector(".templates-item-hover.hover-showed");
-  if(forClear){
+  if (forClear) {
     forClear.classList.remove("hover-showed");
   }
-}
+};
 
 //Одрабатка события потери фокуса необходима на случай, когда ссылка в ховере
 // потеряла фокус ввода, но при этом ни какой другой элемент страницы фокус ввода не получил
 function onFocusoutTemplate(){
   setTimeout(delayFocusoutHandler,100);
-}
+};
 
 function delayFocusoutHandler(){
   //Проверяем есть ли сфокусированная ссылка в карточах
-  if(document.querySelector(".templates-item a:focus")) return;
+  if (document.querySelector(".templates-item a:focus")) return;
   //Фокуса в карточках нет - убираем с экрана ховер
   let forClear = document.querySelector(".templates-item-hover.hover-showed");
-  if(forClear){
+  if (forClear) {
     forClear.classList.remove("hover-showed");
   }
-}
+};
 
 let slides = document.querySelectorAll(".slides-list-item");
 let slideButtons = document.querySelectorAll(".slides-switch-button");
 let slideLinks = document.querySelectorAll(".slides-list-item .button");
 function sliderSwitchClickHandler(num){
-  for( let i = 0; i<slides.length; i++){
+  for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("is-showed");
   }
-  for( let i = 0; i < slideButtons.length; i++){
+  for (let i = 0; i < slideButtons.length; i++) {
     slideButtons[i].classList.remove("active-button");
   }
-  for( let i = 0; i< slideLinks.length; i++){
+  for (let i = 0; i < slideLinks.length; i++) {
     slideLinks[i].setAttribute("tabindex","-1");
   }
-
   slides[num].classList.add("is-showed");
   slideButtons[num].classList.add("active-button");
   slideLinks[num].setAttribute("tabindex","0");
-
-}
+};
 
 //let modalWindow = document.querySelector(".write-to-us");
 let formFields = modalWindow.querySelectorAll(".form-field");
@@ -130,13 +128,12 @@ modalWindow.querySelector("[type='submit']").addEventListener("click", function(
   let res = true;
   modalWindow.classList.remove("modal-error");
   modalWindow.offsetWidth = modalWindow.offsetWidth;
-  for( let i = 0; i < formFields.length; i++){
+  for (let i = 0; i < formFields.length; i++) {
     res = res && formFields[i].value && formFields[i].checkValidity();
   }
   if (!res) {
     evt.preventDefault();
     modalWindow.classList.add("modal-error");
-
   }
-})
+});
 
