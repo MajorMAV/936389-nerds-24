@@ -1619,7 +1619,7 @@ fieldset.filter-feature {
   left: 0;
   bottom: 8px;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 27px;
