@@ -382,7 +382,7 @@ a {
 
 .propositions {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
   padding: 0;
 }
 
@@ -400,6 +400,7 @@ a {
 
 .propositions-list-item {
   margin-right:  100px;
+  margin-bottom: 15px;
 }
 
 .propositions-list-item:nth-of-type(3n) {
