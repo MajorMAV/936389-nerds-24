@@ -1745,6 +1745,7 @@ fieldset.filter-feature {
 .pagination-item {
   margin: 0;
   margin-right: 11px;
+  margin-bottom: 5px;
   padding: 0;
 }
 
@@ -1795,7 +1796,7 @@ fieldset.filter-feature {
 }
 
 .inner-page footer {
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .map-container {
