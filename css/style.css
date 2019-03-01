@@ -697,15 +697,11 @@ a {
 .social-invitation {
   width:560px;
   margin: 0;
-  margin-left: 140px;
-  padding-top: 6px;
+  margin-left: 127px;
+  padding: 6px 6px 6px 0;
 }
 
-.social-invitation-discount {
-  padding: 0;
-  margin: 0;
-  padding-top: 9px;
-}
+
 
 .social-invitation-text {
   font-size: 36px;
@@ -715,6 +711,10 @@ a {
 }
 
 .social-invitation-discount {
+  padding: 0;
+  margin: 0;
+  padding-top: 9px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -727,12 +727,18 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 260px;
+  width: 273px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
+}
+
+.social-buttons-item {
+  margin-right: 13px;
+  margin-bottom: 13px;
 }
 
 .social-buttons-item a {
