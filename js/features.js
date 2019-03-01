@@ -109,6 +109,7 @@ let slideLinks = document.querySelectorAll(".slides-list-item .button");
 function sliderSwitchClickHandler(num){
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("is-showed");
+    slides[i].classList.add("visually-hidden");
   }
   for (let i = 0; i < slideButtons.length; i++) {
     slideButtons[i].classList.remove("active-button");
@@ -116,6 +117,7 @@ function sliderSwitchClickHandler(num){
   for (let i = 0; i < slideLinks.length; i++) {
     slideLinks[i].setAttribute("tabindex","-1");
   }
+  slides[num].classList.remove("visually-hidden");
   slides[num].classList.add("is-showed");
   slideButtons[num].classList.add("active-button");
   slideLinks[num].setAttribute("tabindex","0");

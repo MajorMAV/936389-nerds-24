@@ -140,7 +140,7 @@ a {
   z-index: 5;
 }
 
-.logo:active {
+.logo.inner-page:active {
   opacity: 0.3;
 }
 
@@ -260,7 +260,7 @@ a {
 }
 
 .slides-list-item {
-  position: absolute;
+  position: relative;
   width: 1160px;
   min-height: 430px;
 
@@ -272,6 +272,19 @@ a {
 .slides-list-item.is-showed {
   right: 0;
   opacity: 1;
+}
+
+.slides-list-item.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .slides-list-item b {
@@ -296,6 +309,7 @@ a {
 
 .slide-wrapper {
   width: 519px;
+  padding-bottom: 80px;
 }
 
 .slide-mobilephone {
